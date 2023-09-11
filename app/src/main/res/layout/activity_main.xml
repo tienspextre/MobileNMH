@@ -26,8 +26,8 @@
 
     <com.example.mobilenmh.ShapeView
         android:id="@+id/shapeView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="16dp" />
 </LinearLayout>
