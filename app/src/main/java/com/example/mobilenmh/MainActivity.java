@@ -19,17 +19,17 @@ import yuku.ambilwarna.AmbilWarnaDialog;
 public class MainActivity extends AppCompatActivity {
 
     private Button shapeButton, colorButton, submitButton;
-    int chosenColor ;
+    int chosenColor = Color.RED;
     RelativeLayout relativeLayout;
     private final String[] shapeOptions = {"Circle", "Rectangle", "Triangle", "Square", "Oval"};
-    int chosenShape;
-    ShapeView shapeView = findViewById(R.id.shapeView);
-
+    int chosenShape = 0;
+    ShapeView shapeView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        shapeView = findViewById(R.id.shapeView);
         shapeView.setShapeType(chosenShape);
         shapeView.setShapeColor(chosenColor);
 
